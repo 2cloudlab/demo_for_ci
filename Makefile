@@ -21,6 +21,7 @@ test: ## Run unittests
 test-coverage: ## Run tests with coverage
 	@ls -al
 	@pwd
+	@ls -al /home/runner/
 	@go test -short -coverprofile cover.out -covermode=atomic ${PKG_LIST}
 
 build: dep ## Build the binary file
