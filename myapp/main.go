@@ -5,12 +5,11 @@ import(
 	"demo_for_ci/mylib"
 )
 
-// main
 func main(){
 	Aggregate(2, 3)
 }
 
-// Aggreage a + b
+// Aggregate a + b
 func Aggregate(a int, b int){
 	Multiply(mylib.Add(a, b))
 }
