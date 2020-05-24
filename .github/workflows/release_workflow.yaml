@@ -1,4 +1,4 @@
-name: Daily routines
+name: Release routines
 on:
   push:
     branches:

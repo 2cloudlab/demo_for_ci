@@ -4,7 +4,7 @@ package main_test
 
 import(
 	"testing"
-	"2cloudlab/demo_for_ci/myapp"
+	"github.com/2cloudlab/demo_for_ci/myapp"
 )
 
 func TestAggregate(t *testing.T) {
