@@ -1,9 +1,8 @@
 name: Release routines
 on:
-  push:
-    branches:
-      - master
-  pull_request:
+  create:
+    tags:
+      - v*
 
 jobs:
   lint:
