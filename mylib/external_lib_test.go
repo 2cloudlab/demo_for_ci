@@ -3,7 +3,7 @@ package mylib_test
 import (
 	"fmt"
 	"testing"
-	"demo_for_ci/mylib"
+	"2cloudlab/demo_for_ci/mylib"
 )
 
 func TestAdd(t *testing.T) {

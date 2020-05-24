@@ -2,7 +2,7 @@ package main
 
 import(
 	"fmt"
-	"demo_for_ci/mylib"
+	"2cloudlab/demo_for_ci/mylib"
 )
 
 func main(){
