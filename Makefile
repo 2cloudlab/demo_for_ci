@@ -20,6 +20,7 @@ test: ## Run unittests
 
 test-coverage: ## Run tests with coverage
 	@go test -short -coverprofile cover.out -covermode=atomic ${PKG_LIST}
+	@echo "$(cat cover.out)"
 
 build: dep ## Build the binary file
 	@go build -i -o build/main $(PKG)
