@@ -1,6 +1,6 @@
 PROJECT_NAME := "demo_for_ci"
 PKG := "github.com/2cloudlab/$(PROJECT_NAME)"
-PKG_LIST := $(shell go list ./... | grep -v /vendor/)
+PKG_LIST := "demo_for_ci/mylib demo_for_ci/myapp"
  
 .PHONY: all dep lint vet test test-coverage build clean
  
