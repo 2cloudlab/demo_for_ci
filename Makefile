@@ -1,6 +1,6 @@
 PROJECT_NAME := "demo_for_ci"
 PKG := "github.com/2cloudlab/$(PROJECT_NAME)"
-PKG_LIST := $(shell go list ${PKG}/... | grep -v /vendor/)
+PKG_LIST := $(shell go list ./... | grep -v /vendor/)
  
 .PHONY: all dep lint vet test test-coverage build clean
  
@@ -19,7 +19,8 @@ test: ## Run unittests
 	@go test -short ${PKG_LIST}
 
 test-coverage: ## Run tests with coverage
-	@go test -short -coverprofile cover.out -covermode=atomic ${PKG_LIST} 
+    @echo "${PKG_LIST}"
+	@go test -short -coverprofile cover.out -covermode=atomic ${PKG_LIST}
 	@echo "$(cat cover.out)"
 
 build: dep ## Build the binary file

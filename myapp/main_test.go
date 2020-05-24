@@ -2,7 +2,7 @@ package main_test
 
 import(
 	"testing"
-	"github.com/2cloudlab/demo_for_ci/myapp"
+	"demo_for_ci/myapp"
 )
 
 func TestMultiply(t *testing.T) {
