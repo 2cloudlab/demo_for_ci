@@ -1,6 +1,6 @@
 PROJECT_NAME := "demo_for_ci"
 PKG := "github.com/2cloudlab/$(PROJECT_NAME)"
-PKG_LIST := "./mylib ./myapp"
+PKG_LIST := "./mylib"
  
 .PHONY: all dep lint vet test test-coverage build clean
  
