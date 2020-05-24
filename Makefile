@@ -19,7 +19,7 @@ test: ## Run unittests
 	@go test -short ${PKG_LIST}
 
 test-coverage: ## Run tests with coverage
-    @echo "${PKG_LIST}"
+    @echo "$(PKG_LIST)"
 	@go test -short -coverprofile cover.out -covermode=atomic ${PKG_LIST}
 	@echo "$(cat cover.out)"
 
