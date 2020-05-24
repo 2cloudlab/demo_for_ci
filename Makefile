@@ -27,7 +27,7 @@ all-tests-coverage: ## Run all tests with coverage
 	@echo "$(cat cover.out)"
 
 build: dep ## Build the binary file
-	@go build -i -o build/main $(PKG)
+	@go build -i -o build/main $(PKG)/myapp
  
 clean: ## Remove previous build
 	@rm -f $(PROJECT_NAME)/build
