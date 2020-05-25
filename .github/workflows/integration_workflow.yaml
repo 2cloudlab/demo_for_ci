@@ -1,4 +1,4 @@
-name: Release routines
+name: Package routines
 on:
   create:
     tags:
